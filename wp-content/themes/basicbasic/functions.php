@@ -11,11 +11,50 @@ function svh_enqueue_scripts() {
     wp_enqueue_script( 'bootstrap', TPL_DIR_URI . '/assets/vendor/bootstrap/js/bootstrap.min.js', ['jquery']); 
 } 
 add_action( 'wp_enqueue_scripts', 'svh_enqueue_scripts'); 
- 
-//doing menus
+
+//add new menu
 function register_svh_menus() {
     register_nav_menus([
         'main-menu' => __( 'Main Menu' )
     ]);
 }
 add_action('init', 'register_svh_menus');
+
+//define TPL_DIR, link to folder
+define('TPL_DIR',  get_stylesheet_directory());
+
+// Register Custom Navigation Walker
+function register_navwalker(){
+	require_once TPL_DIR . '/inc/class-wp-bootstrap-navwalker.php';
+}
+add_action( 'after_setup_theme', 'register_navwalker' );
+
+//sidebar
+function svh_widgets_init() {
+
+	register_sidebar(
+		[
+			'name'          => 'Footer',
+			'id'            => 'sidebar-footer',
+			'description'   => 'Add widgets here to appear in your footer.',
+			'before_widget' => '<div id="%1$s" class="col-12 col-lg-4 footer-widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h2 class="footer-widget__title">',
+			'after_title'   => '</h2>',
+        ]
+    );
+
+    register_sidebar(
+		[
+			'name'          => 'Sidebar',
+			'id'            => 'sidebar-main',
+			'description'   => 'Add widgets here to appear in your sidebar.',
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+        ]
+	);
+
+}
+add_action( 'widgets_init', 'svh_widgets_init' );
