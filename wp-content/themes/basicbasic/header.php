@@ -14,7 +14,7 @@
             <div class="row">
                 <div class="col slogan">My Novel Website</div>
                 <div class="col topbar-email text-right">
-                    <a href="https://drive.google.com/drive/folders/12Ap7n5mBvlSUnQAnhcDJ9eBbD9vd6IoK">Nhom10.vn</a>
+                    <a href="https://drive.google.com/drive/folders/12Ap7n5mBvlSUnQAnhcDJ9eBbD9vd6IoK">Nhom10@hotmail.com</a>
                 </div>
             </div>
         </div>

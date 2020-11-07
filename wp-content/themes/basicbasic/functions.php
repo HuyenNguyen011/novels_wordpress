@@ -1,5 +1,7 @@
 <?php 
-define('TPL_DIR_URI', get_template_directory_uri()); //Add css files 
+#define TPL_DIR_URI
+define('TPL_DIR_URI', get_template_directory_uri()); 
+//Add css files 
 function svh_enqueue_styles() { 
     wp_enqueue_style( 'bootstrap', TPL_DIR_URI . '/assets/vendor/bootstrap/css/bootstrap.min.css' );
     wp_enqueue_style( 'core', TPL_DIR_URI . '/style.css' ); 
