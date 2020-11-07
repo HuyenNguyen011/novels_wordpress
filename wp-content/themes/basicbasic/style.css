@@ -15,4 +15,27 @@ Text Domain: basicbasic
 This theme, like WordPress, is licensed under the GPL. 
 Use it to make something cool, have fun, and share what you've learned with others. 
 */
+.logo {
+  width: 50px;
+}
 
+#topbar {
+  background: #57cba6;
+}
+
+.slogan {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Comic Sans MS;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #135F37;
+}

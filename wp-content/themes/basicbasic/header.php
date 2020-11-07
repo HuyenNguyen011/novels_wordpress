@@ -4,6 +4,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 <meta http-equiv="X-UA-Compatible" content="ie=edge"> <title><?php  ?></title> 
 <?php wp_head(); ?>
+<link rel="stylesheet" href="<?php get_template_directory_uri() ?>/wordpress-w2/wp-content/themes/basicbasic/style.css"/>
+
 </head> 
 <body> 
 <header>
@@ -23,8 +25,8 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="">
-                <img class="logo" src="<?php get_template_directory_uri() ?>assets/vendor/bootstrap/images/logo.png" alt="Logo">
+            <a class="navbar-brand" href="#">
+                <img class="logo" src="<?php get_template_directory_uri() ?>/wordpress-w2/wp-content/uploads/2020/11/logo.png">
             </a>
             <?php
                 wp_nav_menu([
