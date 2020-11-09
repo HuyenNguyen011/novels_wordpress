@@ -5,7 +5,6 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge"> <title><?php  ?></title> 
 <?php wp_head(); ?>
 <link rel="stylesheet" href="<?php get_template_directory_uri() ?>/wordpress-w2/wp-content/themes/basicbasic/style.css"/>
-
 </head> 
 <body> 
 <header>
@@ -16,8 +15,9 @@
                 <div class="col topbar-email text-right">
                     <a href="https://drive.google.com/drive/folders/12Ap7n5mBvlSUnQAnhcDJ9eBbD9vd6IoK">Nhom10@hotmail.com</a>
                 </div>
-            </div>
-        </div>
+                
+            </div>            
+        </div>       
     </div>
     <nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
         <div class="container">
@@ -28,6 +28,7 @@
             <a class="navbar-brand" href="#">
                 <img class="logo" src="<?php get_template_directory_uri() ?>/wordpress-w2/wp-content/uploads/2020/11/logo.png">
             </a>
+
             <?php
                 wp_nav_menu([
                     'theme_location'    => 'main-menu',

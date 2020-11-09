@@ -21,6 +21,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 #topbar {
   background: #57cba6;
+  height: 40px;
 }
 
 .slogan {
@@ -37,5 +38,19 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: #135F37;
+  color: #135f37;
+}
+
+.col-12 {
+  text-align: center;
+}
+
+img.icon-box--img {
+  width: 40px;
+}
+
+.icon-box {
+  border: 1px solid #f0f0f0;
+  padding: 10px;
+  box-shadow: 1px 1px 1px 1px #f0f0f0;
 }
