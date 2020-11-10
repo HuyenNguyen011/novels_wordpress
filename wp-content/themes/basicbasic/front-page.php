@@ -1,4 +1,3 @@
-
 <?php get_header(); ?> 
 
 <div class="container"> 
@@ -9,7 +8,7 @@
     </section>
 </div> 
 
-<!-- phần thứ 2, nổi bật  -->
+<!-- giới thiệu điểm nổi bật  -->
 <section id="home-features" class='section bg-grey'>
     <div class="container">
         <div class="row">
