@@ -9,13 +9,13 @@
                 </div>
             <?php endif; ?>
         </div>
-        <div class="absolute-widgets">
+        <!-- <div class="absolute-widgets">
             <div class="container">
                 <div class="copyright-footer text-center">
                     &copy Nhom10
                 </div>
             </div>
-        </div>
+        </div> -->
 </footer>
 
 <?php wp_footer(); ?> 

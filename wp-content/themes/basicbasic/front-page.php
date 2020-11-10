@@ -48,6 +48,52 @@
                 </div>
             </div>
         </div>
+        <!--List New Post-->
+        <section id="home-new-posts" class='section'>
+            <div class="container">
+                <h2 class="section-title">
+                    Bài viết mới nhất
+                </h2>
+                <?php
+                    $np_args = [
+                        'post_type' => 'post'
+                    ];
+                    $np_result = new WP_Query($np_args);
+
+                    if($np_result->have_posts()):
+                    while($np_result->have_posts()):
+                        $np_result->the_post();
+                ?>
+                <div class="row home-newpost">
+                    <div class="col-12 col-lg-12 col-xl-12">
+                        <h3 class="home-newpost--title">
+                            <a href="<?= the_permalink(); ?>">
+                                <?= the_title(); ?>
+                            </a>
+                        </h3>
+                        <div class="home-newpost--meta mb-20">
+                            <?= the_category(); ?> <br>
+                        </div>
+                        <div class="home-newpost--excerpt">
+                            <?= the_excerpt(); ?>
+                        </div>
+                    </div>
+                </div>
+                <?php
+                endwhile;
+            else:
+            ?>
+            <div class="row">
+                <div class="col">
+                    <h4 class="text-danger">Chưa có bài viết, vui lòng quay lại sau!</h4>
+                </div>
+            </div>
+            <?php endif; ?>
     </div>
 </section>
+    </div>
+</section>
+<div class="notification-mail">
+    <?php echo do_shortcode('[contact-form-7 id="37" title="Contact form 1"]'); ?>
+</div>
 <?php get_footer();?>

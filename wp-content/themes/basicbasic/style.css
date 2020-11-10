@@ -55,7 +55,29 @@ img.icon-box--img {
   box-shadow: 1px 1px 1px 1px #f0f0f0;
 }
 
-#footer {
-  background: #57cba6;
+.notification-mail {
+  background-color: #f8f9fa;
+  text-align: center;
+}
 
+.footer-widgets {
+  background: #57cba6;
+  color: #fff;
+  padding: 30px 0;
+}
+.home-newpost--title a {
+  color: #000;
+}
+.home-newpost--meta a {
+  color: #000;
+}
+.post-categories {
+  list-style: none;
+}
+.home-newpost {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+  margin: 50px;
+  border-radius: 15px;
+  padding: 20px;
 }
