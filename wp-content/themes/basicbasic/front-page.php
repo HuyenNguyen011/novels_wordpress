@@ -40,10 +40,15 @@
                 <div class="icon-box">
                     <img class="icon-box--img" src="<?php get_template_directory_uri() ?>/wordpress-w2/wp-content/uploads/2020/11/logo.png" alt="rate">
                     <h3 class="icon-box--title">
-                        Đánh giá WP
+                        Giới thiệu
                     </h3>
                     <p class="icon-box-desc">
                         WP hơi đơn sơ, chưa có gì.
+                        <br>Nhóm 2 người dựng wp
+                        <br>Name:
+                        <br>Huyền 
+                        <br>Như
+
                     </p>
                 </div>
             </div>

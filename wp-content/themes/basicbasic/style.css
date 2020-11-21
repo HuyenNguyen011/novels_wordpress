@@ -17,6 +17,13 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 .logo {
   width: 50px;
+  height: 50px;
+}
+
+img.custom-logo {
+  width: 50px;
+  height: 50px;
+
 }
 
 #topbar {
@@ -50,9 +57,13 @@ img.icon-box--img {
 }
 
 .icon-box {
-  border: 1px solid #f0f0f0;
-  padding: 10px;
-  box-shadow: 1px 1px 1px 1px #f0f0f0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+  margin: 20px;
+  border-radius: 15px;
+  padding: 20px;
+  width: 250px;
+  height: 315px;
 }
 
 .notification-mail {
