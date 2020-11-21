@@ -96,4 +96,19 @@ function themename_custom_logo_setup() {
 	add_theme_support( 'custom-logo', $defaults );
 }
 add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
-add_image_size( 'custom-size', 50, 50, true ); 
+add_image_size( 'custom-size', 50, 50, true );
+
+//Thumbnails
+add_theme_support( 'post-thumbnails' );
+if ( function_exists( 'add_theme_support' ) ) {
+    add_theme_support( 'post-thumbnails' );
+	set_post_thumbnail_size(235, 194 );
+	the_post_thumbnail( 'thumbnail', array( 'class' => 'alignleft' ) );
+    add_image_size( 'category-thumb', 300, 9999 );
+ }
+if ( has_post_thumbnail() ) {
+    the_post_thumbnail();
+}
+if ( has_post_thumbnail() ) {
+    $featured_image = get_the_post_thumbnail();
+}

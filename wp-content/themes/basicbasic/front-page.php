@@ -48,11 +48,12 @@
                         <br>Name:
                         <br>Huyền 
                         <br>Như
-
                     </p>
                 </div>
             </div>
         </div>
+        </div>
+</section>
         <!--List New Post-->
         <section id="home-new-posts" class='section'>
             <div class="container">
@@ -70,7 +71,18 @@
                         $np_result->the_post();
                 ?>
                 <div class="row home-newpost">
-                    <div class="col-12 col-lg-12 col-xl-12">
+                <div class="col-12 col-lg-4 col-xl-3">
+                    <div class="home-newpost--thumbnail">
+                        <a href="<?= the_permalink(); ?>">
+                            <?php if ( has_post_thumbnail()) : ?>
+                            <a href="<?php the_permalink(); ?>" alt="<?php the_title_attribute(); ?>">
+                            <?php the_post_thumbnail(); ?>
+                            </a>
+                            <?php endif; ?>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8 col-xl-9">
                         <h3 class="home-newpost--title">
                             <a href="<?= the_permalink(); ?>">
                                 <?= the_title(); ?>
@@ -96,8 +108,7 @@
             <?php endif; ?>
     </div>
 </section>
-    </div>
-</section>
+    
 <div class="notification-mail">
     <?php echo do_shortcode('[contact-form-7 id="37" title="Contact form 1"]'); ?>
 </div>
