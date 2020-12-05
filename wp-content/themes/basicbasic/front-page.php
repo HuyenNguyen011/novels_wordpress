@@ -108,7 +108,6 @@
             <?php endif; ?>
     </div>
 </section>
-    
 <div class="notification-mail">
     <?php echo do_shortcode('[contact-form-7 id="37" title="Contact form 1"]'); ?>
 </div>

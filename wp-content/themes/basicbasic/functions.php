@@ -112,3 +112,5 @@ if ( has_post_thumbnail() ) {
 if ( has_post_thumbnail() ) {
     $featured_image = get_the_post_thumbnail();
 }
+
+
