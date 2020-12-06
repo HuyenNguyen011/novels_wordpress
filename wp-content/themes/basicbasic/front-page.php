@@ -1,4 +1,8 @@
+
 <?php get_header(); ?> 
+<?php  ?>
+
+
 
 <div class="container"> 
     <section id="home-slider">
@@ -93,6 +97,9 @@
                         </div>
                         <div class="home-newpost--excerpt">
                             <?= the_excerpt(); ?>
+                            <h4><?php block_field('title');?></h4>
+                            <p><?php block_field('description');?></p>
+                            <a href="<?php block_field('button-url');?>"><?php block_field('button-text');?></a>
                         </div>
                     </div>
                 </div>
